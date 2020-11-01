@@ -13,8 +13,12 @@ user_cost = int(input("Введите значение издержки: "))
 if user_revenue > user_cost:
     print("Ваша фирма работает с прибылью")
     user_proceeds = user_revenue - user_cost
-    user_profitability = user_revenue // user_proceeds
+    print("Выручка Вашей фирмы: ", user_proceeds, "руб.")
+    user_profitability = user_revenue / user_proceeds
     print("Рентабельность Вашей фирмы равна: ", user_profitability)
+    user_staff = int(input("Введите численность сотрудников Вашей фирмы: "))
+    user_profit = user_revenue // user_staff
+    print("Прибыль на одного сотрудника равна: ", user_profit, "руб.")
 elif user_revenue < user_cost:
     print("Ваша фирма работает с убытками")
 elif user_revenue == user_cost:
@@ -22,8 +26,5 @@ elif user_revenue == user_cost:
 else:
     print("Ваши значения не соответствуют условиям программы")
 
-user_staff = int(input("Введите численность сотрудников Вашей фирмы: "))
-user_profit = user_revenue // user_staff
-print("Прибыль на одного сотрудника равна: ", user_profit)
 
 
