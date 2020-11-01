@@ -26,3 +26,4 @@ user_staff = int(input("Введите численность сотрудник
 user_profit = user_revenue / user_staff
 print("Прибыль на одного сотрудника равна: ", user_profit)
 
+
