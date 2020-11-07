@@ -14,7 +14,7 @@ val_for_rating = my_rating.count(user_input)
 if val_for_rating == 0:
     if user_input > my_rating[0]:
         my_rating.insert(0, user_input)
-    elif user_input < my_rating[-11]:
+    elif user_input < my_rating[-1]:
         my_rating.append(user_input)
     else:
         for x in my_rating:
