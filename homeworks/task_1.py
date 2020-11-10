@@ -3,8 +3,8 @@
 Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
 """
 
-a = float(input("Введите Ваше первое число: "))
-b = float(input("Введите Ваше второе число: "))
+user_number1 = float(input("Введите Ваше первое число: "))
+user_number2 = float(input("Введите Ваше второе число: "))
 
 def user_func(a, b):
     if b == 0:
@@ -13,4 +13,4 @@ def user_func(a, b):
     return a / b
 
 func = user_func
-print(func(a, b))
+print(func(user_number1, user_number2))
