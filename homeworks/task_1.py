@@ -3,15 +3,14 @@
 Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
 """
 
-user_number1 = int(input("Введите Ваше первое число: "))
-user_number2 = int(input("Введите Ваше второе число: "))
+a = float(input("Введите Ваше первое число: "))
+b = float(input("Введите Ваше второе число: "))
 
-if user_number2 == 0:
-    print("К сожалению, деление на 0 невозможно, выберите другое число.")
-    user_number2 = int(input("Введите Ваше новое второе число: "))
-
-def div(a, b):
+def user_func(a, b):
+    if b == 0:
+        print("К сожалению, деление на 0 невозможно, выберите другое число.")
+        b = float(input("Введите Ваше новое второе число: "))
     return a / b
 
-func = div
-print(func(user_number1, user_number2))
+func = user_func
+print(func(a, b))
